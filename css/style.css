@@ -1,0 +1,221 @@
+@font-face {
+  font-family: Gill Sans;
+  src: url(../fonts/GillSansStd.otf);
+}
+@font-face {
+  font-family: Gill Sans Bold;
+  src: url(../fonts/GillSansStd-Bold.otf);
+}
+* {
+  font-family: Gill Sans;
+}
+body {
+  font-family: Gill Sans;
+}
+.nav__menu-container {
+  align-items: flex-end !important;
+}
+.backg-nav {
+  background-color: #253154;
+  height: 137px;
+}
+.nav-menu {
+  width: 90%;
+  justify-content: center;
+}
+.nav__menu-items {
+  padding-bottom: 10px;
+}
+.btn-search {
+  color: #252424;
+  font-size: bold;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-menu__logo {
+  width: 100px;
+  height: 100px;
+}
+.nav-menu__item {
+  margin: 0px 50px;
+}
+.nav-menu__dropdown {
+  color: #ffffff;
+  background-color: #253154;
+  border: none;
+}
+.nav-menu__dropdown-item {
+  color: #bdb7b7;
+}
+.main-container {
+  padding: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0px;
+}
+.main-container-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-container__image {
+  background-image: url(../img/index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 318px;
+}
+.main-container__info {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container__info-text {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 50px 50px;
+}
+.main-container__info-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.main-container__button {
+  background: #f29204;
+  color: #ffffff;
+  width: 300px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+}
+.main-container__button > a {
+  text-decoration: none;
+  color: #000;
+}
+.open-container {
+  color: #000;
+  font-weight: bold;
+  padding: 30px 0px;
+}
+.open-container__image {
+  background-image: url(../img/carne-exhibición.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 310px;
+}
+.open-container__text {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+  padding-left: 65px;
+}
+.whatsapp-icon {
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+  position: fixed;
+  bottom: 100px;
+  left: 25px;
+}
+.footer-container {
+  background: #253154;
+  margin: 0px;
+}
+.data-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.social-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social-icon {
+  font-size: 35px;
+  color: #ffffff;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.social-icon:hover {
+  color: #bdb7b7;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo__image {
+  width: 80px;
+  height: 80px;
+}
+.footer-data {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-info {
+  color: #ffffff;
+}
+
+/* quienes somos section */
+.who-container {
+  padding: 40px;
+}
+.who-container__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.who-container__image {
+  background-image: url(../img/carniceria\ familiar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 311px;
+}
+.who-legend {
+  padding: 15px;
+  background-color: #de0000;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 9px 14px 0px #615e5e;
+  margin-bottom: 80px;
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+.contact__container-title {
+  font-family: Gill Sans MT;
+  font-weight: 800;
+}
+
+@media (max-width: 767.98px) {
+  .main-container__info {
+    width: 100%;
+  }
+  .open-container__text {
+    padding: 0px;
+  }
+  .social-container {
+    justify-content: center;
+  }
+  .footer-data {
+    justify-content: center;
+    text-align: center;
+  }
+  .who-container__image {
+    width: 100%;
+  }
+  .nav-menu {
+    background-color: #253154;
+  }
+}
