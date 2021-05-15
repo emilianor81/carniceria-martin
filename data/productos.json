@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "nombre": "Roast Beef",
+        "tipo": "ave",
+        "img": [
+            "img/roastBeef.jpg"
+        ],
+        "precio": 900
+    },
+    {
+        "id": 2,
+        "nombre": "Nalga",
+        "tipo": "vacuno",
+        "img": "img/roastBeef.jpg",
+        "precio": 780
+    },
+    {
+        "id": 3,
+        "nombre": "Colita de Cuadril",
+        "tipo": "vacuno",
+        "img": "img/nalga.jpg",
+        "precio": 650
+    },
+    {
+        "id": 4,
+        "nombre": "Casa",
+        "tipo": "vacuno",
+        "img": "img/milanes.jpg",
+        "precio": 550
+    },
+    {
+        "id": 5,
+        "nombre": "casa",
+        "tipo": "cerdo",
+        "img": [
+            "img/hornoParrilla.jpg"
+        ],
+        "precio": 720
+    },
+    {
+        "id": 7,
+        "nombre": "casa",
+        "tipo": "achura",
+        "img": [
+            "img/hornoParrilla.jpg"
+        ],
+        "precio": 720
+    },
+    {
+        "id": 6,
+        "nombre": "casa",
+        "tipo": "embutidos",
+        "img": [
+            "img/colitaCuadril.jpg"
+        ],
+        "precio": 630
+    },
+        {
+        "id": 8,
+        "nombre": "Casa",
+        "tipo": "ave",
+        "img": [
+            "img/milanes.jpg"
+        ],
+        "precio": 550
+    },
+    {
+        "id": 9,
+        "nombre": "Casa",
+        "tipo": "ave",
+        "img": [
+            "img/milanes.jpg"
+        ],
+        "precio": 550
+    },
+    {
+        "id": 10,
+        "nombre": "casa",
+        "tipo": "cerdo",
+        "img": [
+            "img/colitaCuadril.jpg"
+        ],
+        "precio": 630
+    },
+    {
+        "id": 11,
+        "nombre": "Casa",
+        "tipo": "cerdo",
+        "img": [
+            "img/milanes.jpg"
+        ],
+        "precio": 550
+    },
+                        {
+        "id": 12,
+        "nombre": "casa",
+        "tipo": "achura",
+        "img": [
+            "img/hornoParrilla.jpg"
+        ],
+        "precio": 720
+    },
+    {
+        "id": 13,
+        "nombre": "casa",
+        "tipo": "embutidos",
+        "img": [
+            "img/colitaCuadril.jpg"
+        ],
+        "precio": 630
+    },
+                                {
+        "id": 14,
+        "nombre": "casa",
+        "tipo": "achura",
+        "img": [
+            "img/hornoParrilla.jpg"
+        ],
+        "precio": 720
+    },
+    {
+        "id": 15,
+        "nombre": "casa",
+        "tipo": "embutidos",
+        "img": [
+            "img/colitaCuadril.jpg"
+        ],
+        "precio": 630
+    }
+]

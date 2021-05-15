@@ -119,6 +119,12 @@ body {
   bottom: 100px;
   left: 25px;
 }
+
+.whatsapp-icon img{ 
+  width: 100%;
+  height: auto;
+}
+
 .footer-container {
   background: #253154;
   margin: 0px;
@@ -239,6 +245,20 @@ body {
   background-color: #f29204;
   width: 90%;
   margin: 15px 22px 5px 22px;
+}
+
+#lineaProductos{
+  height: 10px;
+  background-color: #f70808;
+}
+
+.container img{
+  width: 60%;
+  padding: auto;
+}
+
+.containers{
+  border: 1px solid #252424;
 }
 
 @media (max-width: 767.98px) {

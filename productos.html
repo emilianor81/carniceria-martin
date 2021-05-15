@@ -33,12 +33,12 @@
               Productos
             </a>
             <ul class="dropdown-menu nav-menu__dropdown" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Vacuno</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Aves</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Cerdo</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Enbutidos</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Achuras</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Ofertas</a></li>
+              <li><a id="bVacuno" class="dropdown-item nav-menu__dropdown-item" href="productos.html">Vacuno</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Aves</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Cerdo</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Embutidos</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Achuras</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Ofertas</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -58,9 +58,53 @@
     </div>
   </nav>
   <!-- end nav-bar  -->
-  <img class="whatsapp-icon" src="./img/whatsapp.png">
+
+  <!-- star main panel  -->
+  <div>
+    <div>
+      <h3> ¿Como te gustaria cocinar hoy?</h3>
+      <img src="img/cacerola.png" alt="">
+      <img src="img/horno y parilla.png" alt="">
+      <img src="img/plancha.png" alt="">
+      <img src="img/milanes.jpg" alt="">
+      <img src="img/asado.png" alt="">
+    </div>
+    <hr id="lineaProductos">
+
+    <div class="container">
+      <div id="conteinerCajas" class="col-12 row">
+        
+        <!-- <div class="col containers p-3 m-3">
+          <img src="img/roast beef.jpg" alt="">
+          <h5> Roast Beef </h5>
+        </div>
+
+        <div class="col containers p-5">
+          <img src="img/nalga.jpg" alt="">
+          <h5> Nalga </h5>
+        </div>
+
+        <div class="col containers p-5">
+          <img src="img/colita cuadril.jpg" alt="">
+          <h5> Colita de cuadril </h5> -->
+        
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- end  main panel -->
+
+  <a class="whatsapp-icon" target="_blank"
+    href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+    <img src="./img/whatsapp.png">
+  </a>
+  <!-- <img class="whatsapp-icon" src="./img/whatsapp.png"> -->
+
   <!-- footer -->
-  <footer class="container-fluid footer-container">
+  <!-- <footer class="container-fluid footer-container">
     <div class="row data-footer">
       <div class="col-md-4 col-xs-12 social-container">
         <a><i class="bi bi-facebook social-icon"></i></a>
@@ -74,7 +118,7 @@
           Sábado y Domingo de 10 a 14 hrs</div>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
 
@@ -82,6 +126,15 @@
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
+
+  <!-- AGREGO LIBRERIA PARA -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

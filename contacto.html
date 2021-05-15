@@ -33,12 +33,12 @@
               Productos
             </a>
             <ul class="dropdown-menu nav-menu__dropdown" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Vacuno</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Aves</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Cerdo</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Enbutidos</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Achuras</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="#">Ofertas</a></li>
+              <li><a id="bVacuno" class="dropdown-item nav-menu__dropdown-item" href="productos.html">Vacuno</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Aves</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Cerdo</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Embutidos</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Achuras</a></li>
+              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Ofertas</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -78,22 +78,25 @@
         <div class="row contact__container-form">
           <div class="col-md-12 contact__container-item-form">
             <label>Nombre</label>
-            <input type="text" class="form-control" placeholder="Nombre">
+            <input type="text" id="inputNombre" class="form-control" placeholder="Nombre">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Email</label>
-            <input type="text" class="form-control" placeholder="Email">
+            <input type="text" id="inputEmail"  class="form-control" placeholder="Email">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Telefono</label>
-            <input type="text" class="form-control" placeholder="Telefono">
+            <input type="text" id="inputTel" class="form-control" placeholder="Telefono">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Mensaje</label>
-            <textarea class="form-control  " rows="3"></textarea>
+            <textarea class="form-control" id="inputMsj"  rows="3"></textarea>
           </div>
           <div class="col-md-12 contact__container-item-form button-form">
-            <button type="button" class="btn send-button contact__container-item-button">Enviar</button>
+            <a id="btnEnviar" style="width: 70%;" target="_blank" href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+                 <button type="button" class="btn send-button contact__container-item-button">Enviar</button>
+            </a>
+            <!-- <button type="button" class="btn send-button contact__container-item-button">Enviar</button> -->
           </div>
         </div>
         <!-- </form> -->
@@ -102,8 +105,11 @@
     </div>
   </div>
   </div>
-
-  <img class="whatsapp-icon" src="./img/whatsapp.png">
+  <a class="whatsapp-icon" target="_blank"
+    href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+    <img src="./img/whatsapp.png">
+  </a>
+  <!-- <img class="whatsapp-icon" src="./img/whatsapp.png"> -->
   <!-- footer -->
   <footer class="container-fluid footer-container">
     <div class="row data-footer">
