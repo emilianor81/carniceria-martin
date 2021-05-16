@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Carnicería Martín</title>
+
+ <!-- agrego librerias INICIO -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+
+ <!-- fin librerias -->
+
 </head>
 
 <body>
@@ -33,12 +50,13 @@
               Productos
             </a>
             <ul class="dropdown-menu nav-menu__dropdown" aria-labelledby="navbarDropdown">
-              <li><a id="bVacuno" class="dropdown-item nav-menu__dropdown-item" href="productos.html">Vacuno</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Aves</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Cerdo</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Embutidos</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Achuras</a></li>
-              <li><a class="dropdown-item nav-menu__dropdown-item" href="productos.html">Ofertas</a></li>
+              <li><a id="bVacuno" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=vacuno" >Vacuno</a></li>
+              <!-- <li><button id="bAves">AVES</button></li> -->
+              <li><a  id="bAves" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=aves" >Aves</a></li>
+              <li><a  id="bCerdo" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=cerdo" >Cerdo</a></li>
+              <li><a  id="bEmbutidos" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=embutidos">Embutidos</a></li>
+              <li><a  id="bAchuras" class="dropdown-item nav-menu__dropdown-item"  href="productos.html?categoria=achuras">Achuras</a></li>
+              <li><a  id="bOfertas" class="dropdown-item nav-menu__dropdown-item" href="productos.html?categoria=ofertas" >Ofertas</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -78,37 +96,36 @@
         <div class="row contact__container-form">
           <div class="col-md-12 contact__container-item-form">
             <label>Nombre</label>
-            <input type="text" id="inputNombre" class="form-control" placeholder="Nombre">
+            <input type="text" id="inputNombre" class="form-control" placeholder="Nombre" maxlength="35">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Email</label>
-            <input type="text" id="inputEmail"  class="form-control" placeholder="Email">
+            <input type="text" id="inputEmail"  class="form-control" placeholder="Email" maxlength="35">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Telefono</label>
-            <input type="text" id="inputTel" class="form-control" placeholder="Telefono">
+            <input type="text" id="inputTel" class="form-control" placeholder="Telefono" maxlength="20">
           </div>
           <div class="col-md-12 contact__container-item-form">
             <label>Mensaje</label>
-            <textarea class="form-control" id="inputMsj"  rows="3"></textarea>
+            <textarea class="form-control" id="inputMsj"  rows="3" maxlength="40" ></textarea>
           </div>
-          <div class="col-md-12 contact__container-item-form button-form">
-            <a id="btnEnviar" style="width: 70%;" target="_blank" href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
-                 <button type="button" class="btn send-button contact__container-item-button">Enviar</button>
-            </a>
-            <!-- <button type="button" class="btn send-button contact__container-item-button">Enviar</button> -->
+          <div class="col-md-8 contact__container-item-form button-form">
+          </div>  
+            <button id="botonEnviar" onclick="enviarFormulario()"  type="button" class="btn send-button contact__container-item-button w-30">Enviar</button>
           </div>
-        </div>
+          <!-- onclick="location.href=`https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta`" -->
         <!-- </form> -->
       </div>
 
     </div>
   </div>
   </div>
-  <a class="whatsapp-icon" target="_blank"
-    href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
+
+  <a class="whatsapp-icon" target="_blank" href="https://api.whatsapp.com/send?phone=5493815042464&text=Hola!&nbsp;tengo&nbsp;una&nbsp;consulta">
     <img src="./img/whatsapp.png">
   </a>
+
   <!-- <img class="whatsapp-icon" src="./img/whatsapp.png"> -->
   <!-- footer -->
   <footer class="container-fluid footer-container">
@@ -128,11 +145,15 @@
   </footer>
 
 
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="./js/bootstrap.min.js"></script>
+
+ 
+
 </body>
 
 </html>

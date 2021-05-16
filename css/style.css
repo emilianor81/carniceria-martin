@@ -243,7 +243,7 @@ body {
 }
 .send-button {
   background-color: #f29204;
-  width: 90%;
+  width: 55%;
   margin: 15px 22px 5px 22px;
 }
 
@@ -252,14 +252,48 @@ body {
   background-color: #f70808;
 }
 
-.container img{
+
+/* estilos emiliano */
+
+/* .container img{
   width: 60%;
   padding: auto;
+} */
+
+.containerProd{
+  /* border: 1px solid #252424; */
+  width: 90%;
+  height: auto;
+  margin-left: 80px;
+  margin-bottom: 80px;
 }
 
-.containers{
-  border: 1px solid #252424;
+.containerCaja {
+  display: initial;
+  width: 150px;
+  text-align: center;
+  height: 350px;
+  border: 4px solid black;
+  margin: auto;
+  margin-top: 10px;
 }
+
+.imgs {
+    /* flex-grow: 1; */
+     height: 60px;
+     width: 60px;
+     object-fit: cover;
+     padding: 5px;
+    border-radius: 15px;
+}
+
+
+
+/* #btnEnviarA{
+  border: 2px solid blanchedalmond;
+  border-radius: 2px;
+  margin-top: 2px;
+} */
 
 @media (max-width: 767.98px) {
   .main-container__info {

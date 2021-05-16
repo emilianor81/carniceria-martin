@@ -2,31 +2,29 @@
     {
         "id": 1,
         "nombre": "Roast Beef",
-        "tipo": "ave",
-        "img": [
-            "img/roastBeef.jpg"
-        ],
+        "tipo": "aves",
+        "img": ["img/bife.jpg"],
         "precio": 900
     },
     {
         "id": 2,
         "nombre": "Nalga",
         "tipo": "vacuno",
-        "img": "img/roastBeef.jpg",
+        "img": ["img/bife.jpg"],
         "precio": 780
     },
     {
         "id": 3,
         "nombre": "Colita de Cuadril",
         "tipo": "vacuno",
-        "img": "img/nalga.jpg",
+        "img": ["img/nalga.jpg"],
         "precio": 650
     },
     {
         "id": 4,
         "nombre": "Casa",
         "tipo": "vacuno",
-        "img": "img/milanes.jpg",
+        "img": ["img/milanes.jpg"],
         "precio": 550
     },
     {
@@ -59,7 +57,7 @@
         {
         "id": 8,
         "nombre": "Casa",
-        "tipo": "ave",
+        "tipo": "aves",
         "img": [
             "img/milanes.jpg"
         ],
@@ -68,7 +66,7 @@
     {
         "id": 9,
         "nombre": "Casa",
-        "tipo": "ave",
+        "tipo": "aves",
         "img": [
             "img/milanes.jpg"
         ],
@@ -122,7 +120,7 @@
     {
         "id": 15,
         "nombre": "casa",
-        "tipo": "embutidos",
+        "tipo": "ofertas",
         "img": [
             "img/colitaCuadril.jpg"
         ],
