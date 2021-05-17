@@ -9,17 +9,18 @@ function enviarFormulario() {
 $(document).ready(function () {
   function cargarProductos(categoria) {
     // debugger;
-    conteinerCajas.innerText = ``;
+    containerCajas.innerText = ``;
     productosLista.map((elemento) => {
       if (elemento.tipo == categoria) {
-        conteinerCajas.innerHTML += ` 
-                <div class= "containerCaja col-3">
-                <div class="col">
-                        <img src=${elemento.img[0]}>
+        containerCajas.innerHTML += ` 
+                <div class= "containerCaja col-2">
+                <div>
+                        <img class="imgs" src=${elemento.img[0]}>
                 </div>
-                <div class="col"> 
-                    <p>Detalle: ${elemento.nombre}</p>    
-                    <p>Precio $: ${elemento.precio}</p> 
+                <div> 
+                    <p> ${elemento.nombre}</p>    
+                    <h5>$${elemento.precio}</h5> 
+                    <span>Por Kg</span>
                 </div>
                 </div> `;
       }

@@ -156,19 +156,21 @@
     <!-- end nav-bar  -->
 
     <!-- star main panel  -->
-    <main>
-      <div>
-        <h3>¿Como te gustaria cocinar hoy?</h3>
-        <img src="img/cacerola.png" alt="" />
-        <img src="img/horno y parilla.png" alt="" />
-        <img src="img/plancha.png" alt="" />
-        <img src="img/milanes.jpg" alt="" />
-        <img src="img/asado.png" alt="" />
+    <main id="panelProductos" class="container-fluid">
+      <div class="row col-12">
+        <h3 class="col-12">¿Como te gustaria cocinar hoy?</h3>
+        <div class="row col-6">
+          <img class="col-2" src="img/cacerola.png" alt="" />
+          <img class="col-2" src="img/horno y parilla.png" alt="" />
+          <img class="col-2" src="img/plancha.png" alt="" />
+          <img class="col-2" src="img/milanes.jpg" alt="" />
+          <img class="col-2" src="img/asado.png" alt="" />
+        </div>
       </div>
-      <hr id="lineaProductos" />
-
-      <div class="containerProd">
-        <div id="conteinerCajas" class="row"></div>
+      <div id="lineaProductos"></div>
+      <!-- <hr id="lineaProductos" /> -->
+      <div class="row col-12 containerProd">
+        <div id="containerCajas" class="row col-10"></div>
       </div>
     </main>
 
