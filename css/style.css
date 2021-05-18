@@ -271,17 +271,20 @@ body {
 
 .containerCaja {
   display: initial;
-  width: 150px;
+  width: 20%;
   text-align: center;
   height: 240px;
-  border: 1px solid black;
   margin: auto;
   margin-top: 70px;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0px 0px 1px rgb(0 0 0 / 30%), 0px 3px 7px rgb(0 0 0 / 30%),
+    0px 1px white inset, 0px -3px 2px rgb(0 0 0 / 30%) inset;
 }
 
 .imgs {
   height: 125px;
-  width: 140px;
+  width: 130%;
   padding: 3px;
   margin-top: 10px;
 }
@@ -290,6 +293,21 @@ body {
   margin: auto;
 }
 
+.cajaImagen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cajaDetalle {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 /* .galerias {
   display: flex;
   justify-content: left;
@@ -301,6 +319,24 @@ body {
 #panelProductos {
   margin-bottom: 60px;
 }
+
+/******  
+responsive pag productos
+***/
+/* @media (max-width: 1250px) {
+  .imgs {
+    height: 125px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .imgs {
+    height: 70%;
+    width: 110%;
+  }
+} */
+
 @media (max-width: 767.98px) {
   .main-container__info {
     width: 100%;

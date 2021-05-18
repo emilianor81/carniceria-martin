@@ -13,11 +13,11 @@ $(document).ready(function () {
     productosLista.map((elemento) => {
       if (elemento.tipo == categoria) {
         containerCajas.innerHTML += ` 
-                <div class= "containerCaja col-2">
-                <div>
+                <div class= "containerCaja col-2 col-xl-3">
+                <div class="col-12 cajaImagen">
                         <img class="imgs" src=${elemento.img[0]}>
                 </div>
-                <div> 
+                <div class="col-12 cajaDetalle"> 
                     <p> ${elemento.nombre}</p>    
                     <h5>$${elemento.precio}</h5> 
                     <span>Por Kg</span>
