@@ -275,7 +275,7 @@ body {
   text-align: center;
   height: 240px;
   border: 1px solid black;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 70px;
 }
 
