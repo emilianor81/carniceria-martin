@@ -13,7 +13,7 @@ $(document).ready(function () {
     productosLista.map((elemento) => {
       if (elemento.tipo == categoria) {
         containerCajas.innerHTML += ` 
-                <div class= "containerCaja col-2 col-xl-3">
+                <div class= "containerCaja col-10 col-sm-4 col-lg-3 col-xl-2">
                 <div class="col-12 cajaImagen">
                         <img class="imgs" src=${elemento.img[0]}>
                 </div>
@@ -27,6 +27,25 @@ $(document).ready(function () {
     });
   }
 
+  function BuscarProductos(producto) {
+    // debugger;
+    containerCajas.innerText = ``;
+    productosLista.map((elemento) => {
+      if (elemento.nombre == producto) {
+        containerCajas.innerHTML += ` 
+                <div class= "containerCaja col-10 col-sm-4 col-lg-3 col-xl-2">
+                <div class="col-12 cajaImagen">
+                        <img class="imgs" src=${elemento.img[0]}>
+                </div>
+                <div class="col-12 cajaDetalle"> 
+                    <p> ${elemento.nombre}</p>    
+                    <h5>$${elemento.precio}</h5> 
+                    <span>Por Kg</span>
+                </div>
+                </div> `;
+      }
+    });
+  }
   //DECLARO EL ELEMENTO QUE CONTENDRA LOS DATOS
   productosLista = []; //declaro el array de objetos que contendra las propiedades guardadas
 

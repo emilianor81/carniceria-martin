@@ -330,12 +330,14 @@ responsive pag productos
   }
 }
 
-@media (max-width: 1180px) {
-  .imgs {
-    height: 70%;
-    width: 110%;
-  }
+@media (max-width: 991px) {
+  .
 } */
+@media (min-width: 991px) {
+  #formBuscar {
+    display: none;
+  }
+}
 
 @media (max-width: 767.98px) {
   .main-container__info {
