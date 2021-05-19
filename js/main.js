@@ -67,7 +67,7 @@ function enviarFormulario() {
 
 $(document).ready(function () {
   listaProductos = [];
-  if (window.location.pathname === "/productos.html") {
+  if (window.location.pathname.endsWith("/productos.html")) {
     cargarProductos();
   }
 });
